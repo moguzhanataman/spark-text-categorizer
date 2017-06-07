@@ -1,0 +1,12 @@
+magazin008.txt
+magazin018.txt
+magazin028.txt
+magazin038.txt
+magazin048.txt
+magazin058.txt
+magazin068.txt
+magazin078.txt
+magazin088.txt
+magazin098.txt
+magazin108.txt
+magazin118.txt

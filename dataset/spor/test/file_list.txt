@@ -1,0 +1,12 @@
+spor004.txt
+spor014.txt
+spor024.txt
+spor034.txt
+spor044.txt
+spor054.txt
+spor064.txt
+spor074.txt
+spor084.txt
+spor094.txt
+spor104.txt
+spor114.txt

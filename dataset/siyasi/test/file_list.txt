@@ -1,0 +1,12 @@
+siyasi004.txt
+siyasi014.txt
+siyasi024.txt
+siyasi034.txt
+siyasi044.txt
+siyasi054.txt
+siyasi064.txt
+siyasi074.txt
+siyasi084.txt
+siyasi094.txt
+siyasi104.txt
+siyasi114.txt

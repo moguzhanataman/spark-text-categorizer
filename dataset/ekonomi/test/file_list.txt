@@ -1,0 +1,12 @@
+ekonomi004.txt
+ekonomi014.txt
+ekonomi024.txt
+ekonomi034.txt
+ekonomi044.txt
+ekonomi054.txt
+ekonomi064.txt
+ekonomi074.txt
+ekonomi084.txt
+ekonomi094.txt
+ekonomi104.txt
+ekonomi114.txt

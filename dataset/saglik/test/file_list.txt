@@ -1,0 +1,12 @@
+saglik010.txt
+saglik020.txt
+saglik030.txt
+saglik040.txt
+saglik050.txt
+saglik060.txt
+saglik070.txt
+saglik080.txt
+saglik090.txt
+saglik100.txt
+saglik110.txt
+saglik120.txt
