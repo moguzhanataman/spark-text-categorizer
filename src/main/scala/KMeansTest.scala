@@ -9,7 +9,7 @@ import org.apache.spark.sql.SparkSession
   */
 
 object KMeansTest {
-  val datasetBase = "/home/ataman/datasets/haber/"
+  val datasetBase = "dataset/"
 
   def main(args: Array[String]): Unit = {
     val spark = SparkSession
@@ -67,24 +67,11 @@ object KMeansTest {
 
 
     val trainDataWithFeatures = cvModelTrain.transform(trainDf)
-    //    trainDataWithFeatures.show()
     val testDataWithFeatures = cvModelTest.transform(testDf)
-    //    testDataWithFeatures.show()
     val allDataWithFeatures = cvModelAll.transform(allDf)
-    //    allDataWithFeatures.show()
 
     val trainToModel = allDataWithFeatures.intersect(trainDataWithFeatures)
     val testToModel = allDataWithFeatures.intersect(testDataWithFeatures)
-
-    //    testToModel.toDF("id", "words", "features").show()
-
-    //    trainToModel.show()
-    //    testToModel.show()
-    //
-    //    implicit val vectorEncoder = org.apache.spark.sql.Encoders.kryo[Vector]
-    //    allDataWithFeatures.map(row => Vectors.fromML(row.getAs[Vector](0)))
-    ////    val model = KMeans.train(allDataWithFeatures.rdd.cache(), 5, 100)
-
 
     val kmeans = new KMeans()
       .setK(5)
@@ -94,13 +81,10 @@ object KMeansTest {
       .fit(allDataWithFeatures)
 
     val result = model.transform(allDataWithFeatures)
-    //    result.show(10, false)
 
     import spark.implicits._
 
-    // .write.csv("results.csv")
     val idAndPreds = result.select($"id", $"prediction")
-
 
     println("ekonomi:")
     idAndPreds.filter($"id".startsWith("ekonomi")).select($"prediction").groupBy($"prediction").count().show()

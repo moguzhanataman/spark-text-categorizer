@@ -15,7 +15,7 @@ import scala.io.Source
   */
 
 class VectorContainer(mode: String, spark: SparkSession) {
-  val datasetBase = "/home/ataman/datasets/haber/"
+  val datasetBase = "dataset/"
   var lastCategory: String = ""
   var lastId = 0
   var idVectorArray: Array[(String, Array[String])] = _

@@ -11,7 +11,7 @@ import scala.collection.mutable
   */
 object LDATest {
   def main(args: Array[String]): Unit = {
-    val datasetBase = "/home/ataman/datasets/haber/"
+    val datasetBase = "dataset/"
 
     val spark = SparkSession
       .builder()
